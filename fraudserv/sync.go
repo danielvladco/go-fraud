@@ -4,14 +4,14 @@ import (
 	"context"
 	"time"
 
+	"github.com/celestiaorg/go-fraud/otel/attribute"
+	"github.com/celestiaorg/go-fraud/otel/codes"
 	"github.com/ipfs/go-datastore"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p/core/event"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/libp2p/go-libp2p/core/protocol"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
 
 	"github.com/celestiaorg/go-libp2p-messenger/serde"
 

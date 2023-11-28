@@ -8,15 +8,15 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/celestiaorg/go-fraud/otel"
+	"github.com/celestiaorg/go-fraud/otel/attribute"
+	"github.com/celestiaorg/go-fraud/otel/codes"
+	"github.com/celestiaorg/go-fraud/otel/trace"
 	"github.com/ipfs/go-datastore"
 	logging "github.com/ipfs/go-log/v2"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/peer"
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/trace"
 
 	"github.com/celestiaorg/go-header"
 
